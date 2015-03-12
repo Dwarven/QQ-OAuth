@@ -40,7 +40,7 @@
 }
 
 - (void)login:(void (^)(BOOL, id))result{
-    [self logout];
+//    [self logout]; //qq sdk 2.8.1 有bug,登录前注销一下会导致检测不到qq app的安装
     
     _result = result;
     
