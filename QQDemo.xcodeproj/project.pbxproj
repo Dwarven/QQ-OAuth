@@ -244,7 +244,7 @@
 		DF63C2E4196E30F8005C2693 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Dwarven;
 				TargetAttributes = {
 					DF63C30C196E30F8005C2693 = {
@@ -370,6 +370,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -437,6 +438,7 @@
 				INFOPLIST_FILE = "QQDemo/QQDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dwarven.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +458,7 @@
 				INFOPLIST_FILE = "QQDemo/QQDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dwarven.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -477,6 +480,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "QQDemoTests/QQDemoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dwarven.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -495,6 +499,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QQDemo/QQDemo-Prefix.pch";
 				INFOPLIST_FILE = "QQDemoTests/QQDemoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dwarven.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
