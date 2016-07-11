@@ -8,6 +8,7 @@
 
 #import "TencentAccess.h"
 #import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/TencentApiInterface.h>
 
 #define kAppId @"222222"
 
